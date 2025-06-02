@@ -1,0 +1,189 @@
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(font/Pretendard-Medium.woff) format('woff');
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'Menlo';
+    src: url(font/menlo-regular-webfont.woff2) format('woff2');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+*{
+    font-family: 'Pretendard','Menlo';
+    font-size: 17px;
+}
+
+/*
+  #i9 {
+    width: 100%;
+    height: 50px;
+    margin-left:auto;
+    font-size: 50px;
+    font-style: italic;
+  }
+  #i9 {
+    filter: blur(4px);
+    transition: 1s;
+  }
+  #i9:hover {
+    filter: blur(1px);
+    transition: 0.45s;
+    cursor: zoom-in;
+  }
+  #i9:active {
+    filter: blur(0);
+    transition: 0.2s;
+  }
+
+#i9 {
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 2.5rem;
+    font-weight:bold;
+    color: rgb(222, 255, 171);
+}
+#i9:hover {
+  color: #96f7f0;
+}
+#i9:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.flow-wrap {
+  animation: textLoop 10s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+*/
+
+/* 흐르는 텍스트 전체 컨테이너 */
+/*
+#i9 {
+  position: absolute;           
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(222, 255, 171);
+  filter: blur(4px);
+  transition: filter 0.3s ease, color 0.3s ease;
+  z-index: 10;
+  pointer-events: none;         
+}
+
+#i9:hover {
+  filter: blur(1px);
+  color: #96f7f0;
+  pointer-events: auto;         
+  cursor: zoom-in;
+}
+
+#i9:active {
+  filter: blur(0);
+}
+
+
+.flow-wrap {
+  animation: textLoop 10s linear infinite;
+  padding-right: 2vw;
+  pointer-events: none;
+}
+
+#i9:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+*/
+/* 흐르는 텍스트 컨테이너 */
+#i9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 50px;
+  display: block;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(222, 255, 171);
+  filter: blur(4px);
+  transition: filter 0.3s ease, color 0.3s ease;
+  z-index: 10;
+
+
+}
+
+#i9:hover {
+  filter: blur(1px);
+  color: #96f7f0;
+  cursor: zoom-in;
+}
+
+#i9:active {
+  filter: blur(0);
+}
+
+.flow-wrap {
+  animation: textLoop 50s linear infinite;
+  min-width: 300vw; 
+
+}
+
+#i9:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
